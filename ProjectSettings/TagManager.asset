@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Environment
   layers:
   - Default
   - TransparentFX
@@ -46,4 +47,7 @@ TagManager:
     locked: 0
   - name: Interactable
     uniqueID: 1254303757
+    locked: 0
+  - name: Actor
+    uniqueID: 544643809
     locked: 0
