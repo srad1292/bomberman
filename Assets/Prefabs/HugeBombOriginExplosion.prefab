@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1029641028828576999}
   - component: {fileID: 1029641028828576996}
   - component: {fileID: 1029641028828576997}
+  - component: {fileID: -4083050138183527076}
   m_Layer: 0
   m_Name: HugeBombOriginExplosion
   m_TagString: Untagged
@@ -95,6 +96,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a742c6770b2dfd24b84850b83fd4a8e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -322292780, guid: da987d10a03abd8419d27781650e2903, type: 3}
+  - {fileID: 1496301449, guid: da987d10a03abd8419d27781650e2903, type: 3}
+  - {fileID: -903681776, guid: da987d10a03abd8419d27781650e2903, type: 3}
+  spriteDuration: 0.25
+  doReverse: 1
+--- !u!114 &-4083050138183527076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029641028828577002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 008f1bfe5f772554b9344cb9ef3ab40a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
