@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Environment
   - Destructible
+  - Interactable
+  - Blockable
+  - Stairs
+  - Pickup
   layers:
   - Default
   - TransparentFX
@@ -18,8 +22,8 @@ TagManager:
   - Enemy
   - Environment
   - Destructible
-  - 
-  - 
+  - Interactable
+  - Blockable
   - 
   - 
   - 
@@ -46,8 +50,14 @@ TagManager:
   - name: Background
     uniqueID: 929349465
     locked: 0
+  - name: Blockable
+    uniqueID: 1849152729
+    locked: 0
   - name: Interactable
     uniqueID: 1254303757
+    locked: 0
+  - name: Destructible
+    uniqueID: 2661850001
     locked: 0
   - name: Actor
     uniqueID: 544643809

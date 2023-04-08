@@ -13,17 +13,23 @@ public class SpriteFlipbook : MonoBehaviour
     int spriteIndex = 0;
     float counter = 0f;
     bool goingInReverse = false;
-
+    
 
     private void Start() {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update() {
-        if (sprites.Length == 0 || mySpriteRenderer == null) {
+        if(isActiveAndEnabled != true) {
+            print("I am not enabled!");
+            return; 
+        }
+
+        if (sprites.Length == 0 || mySpriteRenderer == null ) {
             print("Flipbook: Missing sprites or renderer");
             Destroy(gameObject);
         }
+
         counter += Time.deltaTime;
         if (counter >= spriteDuration) {
             if (goingInReverse) {

@@ -12,6 +12,7 @@ public class Bomb : MonoBehaviour
     [SerializeField] LayerMask destructibleMask;
 
     List<Vector2> validHitPointsAndDirections;
+    List<GameObject> destructibleItems;
     List<GameObject> warnings;
 
     Quaternion upRotation = new Quaternion(0, 0, 0.707106829f, -0.707106829f);
@@ -21,6 +22,7 @@ public class Bomb : MonoBehaviour
 
     private void Start() {
         warnings = new List<GameObject>();
+        destructibleItems = new List<GameObject>();
         validHitPointsAndDirections = GetValidHitPoints();
         SpawnWarnings(validHitPointsAndDirections);
     }
@@ -43,6 +45,7 @@ public class Bomb : MonoBehaviour
                 }
                 else if (destructibleHit.collider != null) {
                     blocked = true;
+                    destructibleItems.Add(destructibleHit.collider.gameObject);
                 }
                 else {
                     currentPoint += direction;
@@ -65,6 +68,7 @@ public class Bomb : MonoBehaviour
         foreach(GameObject warning in warnings) {
             Destroy(warning);
         }
+        DestroyDestructibles(destructibleItems);
         SpawnExplosions(validHitPointsAndDirections);
         Destroy(gameObject);
     }
@@ -92,7 +96,15 @@ public class Bomb : MonoBehaviour
 
             }
         }
+    }
 
+    private void DestroyDestructibles(List<GameObject> items) {
+        foreach(GameObject item in items) {
+            DestructibleItem destructibleItem = item.GetComponent<DestructibleItem>();
+            if(destructibleItem != null) {
+                destructibleItem.DestroyItem();
+            }
+        }
     }
 
 }
