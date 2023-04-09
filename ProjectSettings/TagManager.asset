@@ -10,6 +10,7 @@ TagManager:
   - Blockable
   - Stairs
   - Pickup
+  - Explosion
   layers:
   - Default
   - TransparentFX
@@ -56,8 +57,14 @@ TagManager:
   - name: Interactable
     uniqueID: 1254303757
     locked: 0
+  - name: Explosion
+    uniqueID: 3736309965
+    locked: 0
   - name: Destructible
     uniqueID: 2661850001
+    locked: 0
+  - name: Warning
+    uniqueID: 3832203947
     locked: 0
   - name: Actor
     uniqueID: 544643809

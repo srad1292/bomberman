@@ -18,4 +18,10 @@ public class DestructibleItem : MonoBehaviour
         beingDestroyed = true;
         mySpriteFlipBook.enabled = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag == "Explosion") {
+            DestroyItem();
+        }
+    }
 }
