@@ -13,6 +13,12 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D otherObject) {
         if (otherObject.gameObject.tag == "Stairs") {
             LevelManager.Instance.LevelCompleted();
+        } else if(otherObject.gameObject.tag == "Pickup") {
+            Pickup pickup = otherObject.gameObject.GetComponent<Pickup>();
+            if(pickup != null) {
+                bombPrefab = pickup.GetPickupPrefab();
+                Destroy(otherObject.gameObject);
+            }
         }
     }
 

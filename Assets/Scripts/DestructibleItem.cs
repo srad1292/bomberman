@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class DestructibleItem : MonoBehaviour
 {
+    [SerializeField] GameObject objBehindBox;
+
+
     SpriteFlipbook mySpriteFlipBook;
 
     private bool beingDestroyed;
@@ -16,7 +19,12 @@ public class DestructibleItem : MonoBehaviour
     public void DestroyItem() {
         if(beingDestroyed == true) { return; }
         beingDestroyed = true;
+        if (objBehindBox != null) {
+            Vector2 centerPoint = new Vector2(Mathf.Round(transform.position.x), Mathf.Round(transform.position.y));
+            Instantiate(objBehindBox, centerPoint, Quaternion.identity);
+        }
         mySpriteFlipBook.enabled = true;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
