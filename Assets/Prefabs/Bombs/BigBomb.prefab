@@ -49,8 +49,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   reach: 2
   warningPrefab: {fileID: 7916978650919585998, guid: fcc9acf8413f363408d51df8e88fd424, type: 3}
-  originExplosionPrefab: {fileID: 1029641028828577002, guid: 5ac2aa99c7de49443a5ae7f2b3523ca4, type: 3}
-  directionalExplosionPrefab: {fileID: 7234944484428818947, guid: 8674c132485ec1b4ba59b61dd6671d34, type: 3}
+  originExplosionPrefab: {fileID: 1029641028828577002, guid: 9c925b9b911ab3940a2387a082e832e1, type: 3}
+  directionalExplosionPrefab: {fileID: 7234944484428818947, guid: f4432007e4818f34b82fff9dfd19911f, type: 3}
   blockingMask:
     serializedVersion: 2
     m_Bits: 4096

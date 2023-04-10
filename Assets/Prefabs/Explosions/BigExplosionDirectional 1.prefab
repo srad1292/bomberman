@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8947392996946900371}
   - component: {fileID: -7523646538031766893}
   m_Layer: 0
-  m_Name: HugeBombDirectionalExplosion
+  m_Name: BigExplosionDirectional 1
   m_TagString: Explosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: -558657331
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 823382464, guid: 840410b8fcfc6e24d807e7f1e30f727b, type: 3}
+  m_Sprite: {fileID: 215095886, guid: 9763e24d186890848ae7e1589a76d6c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a742c6770b2dfd24b84850b83fd4a8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 3
+  damage: 2
 --- !u!114 &-8947392996946900371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,9 +113,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 823382464, guid: 840410b8fcfc6e24d807e7f1e30f727b, type: 3}
-  - {fileID: 1332352379, guid: 840410b8fcfc6e24d807e7f1e30f727b, type: 3}
-  - {fileID: 1083617839, guid: 840410b8fcfc6e24d807e7f1e30f727b, type: 3}
+  - {fileID: 215095886, guid: 9763e24d186890848ae7e1589a76d6c6, type: 3}
+  - {fileID: 1538682414, guid: 9763e24d186890848ae7e1589a76d6c6, type: 3}
+  - {fileID: -284444214, guid: 9763e24d186890848ae7e1589a76d6c6, type: 3}
   spriteDuration: 0.25
   doReverse: 1
 --- !u!61 &-7523646538031766893
