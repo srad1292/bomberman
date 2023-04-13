@@ -1,20 +1,29 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Ghostie : MonoBehaviour
 {
     [SerializeField] float speed = 2f;
     [SerializeField] float restTime = 0.2f;
+    [SerializeField] Tilemap wallMap;
 
     private Vector2 targetPosition;
     private float tolerance = 0.05f;
     private bool resting = false;
 
-    // Replace these with a real way to determine bounds
-    private int minX = -8;
-    private int maxX = 8;
-    private int minY = -4;
-    private int maxY = 5;
+    private int minX;
+    private int maxX;
+    private int minY;
+    private int maxY;
+
+    private void Start() {
+        maxX = Mathf.RoundToInt(wallMap.localBounds.max.x - 2);
+        maxY = Mathf.RoundToInt(wallMap.localBounds.max.y - 1);
+        minX = Mathf.RoundToInt(wallMap.localBounds.min.x + 2);
+        minY = Mathf.RoundToInt(wallMap.localBounds.min.y + 2);
+
+    }
 
     private void Update() {
 

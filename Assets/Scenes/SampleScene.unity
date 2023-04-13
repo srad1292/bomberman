@@ -5559,6 +5559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghostie
       objectReference: {fileID: 0}
+    - target: {fileID: 2531144201216105946, guid: 285a0cbace260634da175b96bc25cee4, type: 3}
+      propertyPath: wallMap
+      value: 
+      objectReference: {fileID: 2036935514}
     - target: {fileID: 2531144201216105947, guid: 285a0cbace260634da175b96bc25cee4, type: 3}
       propertyPath: m_RootOrder
       value: 6
