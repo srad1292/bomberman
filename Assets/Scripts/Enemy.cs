@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Explosion") {
             Explosion explosion = other.GetComponent<Explosion>();
-            if(explosion != null) {
+            if(explosion != null && explosion.GetCanHurtEnemies()) {
                 TakeDamage(explosion.GetDamage());
             }
 
