@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5007799349554301845}
   - component: {fileID: 5007799349554301842}
   - component: {fileID: 5621450373847876570}
-  - component: {fileID: 1170461942}
   - component: {fileID: 1170461940}
+  - component: {fileID: 1494037626}
   m_Layer: 10
   m_Name: DestructibleBox
   m_TagString: Destructible
@@ -134,7 +134,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8919331, y: 0.895928}
   m_EdgeRadius: 0
---- !u!50 &1170461942
+--- !u!114 &1170461940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5007799349554301843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c580411e71525948858a69a7506504a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objBehindBox: {fileID: 0}
+--- !u!50 &1494037626
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -155,15 +168,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1170461940
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5007799349554301843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c580411e71525948858a69a7506504a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
